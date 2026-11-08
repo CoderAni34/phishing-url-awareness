@@ -99,7 +99,7 @@ segments, host versus path, case, empty input, malformed parsing and CLI behavio
 
 Updated genuine sample run showing the command, input, both warnings and explanations:
 
-![Sample run](screenshots/sample_run.png)
+![Sample run](screenshots/sample_run.png?v=89208a1)
 
 The user also supplied a readable capture of the five test scenarios:
 
