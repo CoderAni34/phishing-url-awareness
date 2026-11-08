@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn to spot six URL warning signs. A private, browser-only awareness checker by Aniket.">
+  <meta name="color-scheme" content="light">
+  <title>LinkLens — Phishing URL Awareness Checker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="rules.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar wrap">
+    <a class="brand" href="./" aria-label="LinkLens home"><span class="brand-icon" aria-hidden="true">↗</span> LinkLens<span class="brand-dot">.</span></a>
+    <a class="repo-link" href="https://github.com/CoderAni34/phishing-url-awareness" target="_blank" rel="noopener noreferrer">View Python project <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="wrap">
+    <section class="intro">
+      <div class="eyebrow"><span></span> A LITTLE AWARENESS GOES A LONG WAY</div>
+      <h1>Pause before<br>you <span>click.</span></h1>
+      <p class="lede">A link can look familiar and still deserve a second look. Check its text for six common warning signs — without opening it.</p>
+      <div class="privacy"><span aria-hidden="true">⌁</span> Checked in your browser. Entered URLs are never sent to a server.</div>
+    </section>
+
+    <section class="workspace" aria-label="URL checker">
+      <div class="checker panel">
+        <div class="section-top"><span class="step">01 / INSPECT</span><span class="local-badge">TEXT ONLY</span></div>
+        <h2>Take a closer look.</h2>
+        <form id="checker-form" novalidate>
+          <label for="url-input">URL to inspect</label>
+          <textarea id="url-input" name="url" rows="3" placeholder="https://www.example.com/login" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="input-help"></textarea>
+          <div class="input-bottom"><span id="input-help">Paste a sample as text. No links are opened.</span><span id="char-count">0 characters</span></div>
+          <button class="check-button" type="submit">Check URL <span aria-hidden="true">↗</span></button>
+        </form>
+        <div class="sample-section"><p>Just exploring? Try a workbook example.</p><div id="sample-buttons" class="samples"></div></div>
+      </div>
+      <div class="result panel" id="result-panel" aria-live="polite" aria-atomic="true">
+        <span class="step">02 / UNDERSTAND</span>
+        <div id="result-content" class="empty-state">
+          <div class="lens" aria-hidden="true"><span>?</span></div>
+          <h2>A closer look starts here.</h2>
+          <p>Enter a URL or choose an example.<br>We’ll explain each warning sign we find.</p>
+          <div class="empty-note">Clues, not a verdict.</div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="caution"><span class="caution-symbol" aria-hidden="true">!</span><p><strong>No warnings doesn’t mean safe.</strong> These are simple clues, not proof that a URL is safe or malicious. HTTPS is not a guarantee of trust.</p></aside>
+
+    <section class="rule-section" aria-labelledby="rules-title">
+      <div class="rules-heading"><div><span class="step">THE SIX SIGNALS</span><h2 id="rules-title">What’s in a link?</h2></div><p>Small details worth noticing.<br>Each has legitimate uses, too.</p></div>
+      <div class="rule-grid">
+        <article><span class="rule-number">01</span><h3>The @ symbol</h3><p>Text before @ in a URL’s authority can disguise the destination. This broad check also flags @ in a path or query.</p></article>
+        <article><span class="rule-number">02</span><h3>A very long URL</h3><p>More than 100 characters can make a link harder to read. Plenty of legitimate links are long, too.</p></article>
+        <article><span class="rule-number">03</span><h3>A numeric-looking host</h3><p>Four groups of digits can hide a familiar name. The workbook rule matches IPv4-style text; it doesn’t validate the address.</p></article>
+        <article><span class="rule-number">04</span><h3>Lots of hostname parts</h3><p>Five or more dot-separated parts can make a host confusing. Large services sometimes use many parts legitimately.</p></article>
+        <article><span class="rule-number">05</span><h3>The xn-- marker</h3><p>Punycode can represent international domain names, including look-alike letters. International names aren’t inherently suspicious.</p></article>
+        <article><span class="rule-number">06</span><h3>Plain HTTP</h3><p>HTTP doesn’t encrypt traffic. HTTPS adds encryption, but doesn’t prove that the site itself is honest.</p></article>
+      </div>
+    </section>
+    <section class="about"><h2>Built for awareness.</h2><div><p>This is Aniket’s web demo for the EWB AI Powered Cyber Security Internship. The original Python project and recorded tests are available on GitHub.</p><p>The demo checks text only. No DNS lookups, website visits, redirects, malware scans or reputation checks. The browser parser is a small adaptation of the Python workbook rules, not a full URL validator. Encoded symbols, Unicode look-alikes and IPv6 are outside these six checks. No history is saved.</p><p class="ai-note">Created with substantial OpenAI Codex assistance; reviewed by Aniket. Use sample strings for defensive learning.</p></div></section>
+  </main>
+  <footer class="wrap"><span>LinkLens <span class="brand-dot">.</span> By Aniket</span><span>Read the link. Think twice. Stay aware.</span></footer>
+</body>
+</html>

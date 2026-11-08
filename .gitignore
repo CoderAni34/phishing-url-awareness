@@ -8,3 +8,5 @@ venv/
 # Local source workbook and raw extraction are not submission artifacts.
 EWB_Phishing_URL_Checker_Workbook.pdf
 workbook_extracted.txt
+web-demo/
+linklens-deploy.tar.gz

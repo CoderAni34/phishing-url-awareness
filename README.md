@@ -2,6 +2,16 @@
 
 My final mini-project for the EWB AI Powered Cyber Security Internship.
 
+## Web demo
+
+The browser version lives in [`docs/`](docs/). It checks URL text locally using
+JavaScript; entered URLs are never fetched, uploaded or saved. The Python CLI
+below remains the original internship implementation. The web parser is a small
+adaptation, not a full equivalent of Python's URL parser or a URL validator.
+
+Run the optional browser-rule checks with `node tests/test_web.cjs` (Node.js is
+only needed to run these extra web tests, not to use the website or Python CLI).
+
 Phishing links try to trick people into sharing passwords or other sensitive information. This project is a small Python command-line tool that checks URL text for six warning signs from the EWB workbook. It does not open the link or connect to any website.
 
 ## Requirements
@@ -155,6 +165,7 @@ screenshots/
   README.md
   sample_run.png
   test_results.png
+docs/                        Browser-only web demo (GitHub Pages)
 README.md
 WORKBOOK_REQUIREMENTS.md
 SUBMISSION_CHECKLIST.md
@@ -175,3 +186,5 @@ Role: Cyber Security Intern. Programme start date: 28 September 2026. Duration: 
 ## AI assistance
 
 I used OpenAI Codex to extract the workbook requirements, generate the code, tests and documentation, and run local checks. I reviewed the project and took the screenshots myself. Codex also helped revise this README. This project involved substantial AI assistance; it was not written entirely without AI.
+
+Codex also generated the browser demo and its JavaScript tests.
