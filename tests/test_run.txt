@@ -1,0 +1,31 @@
+test_assumption_disclosed (test_checker.CliTests.test_assumption_disclosed) ... ok
+test_eof_and_interrupt (test_checker.CliTests.test_eof_and_interrupt) ... ok
+test_invalid_and_empty_are_not_warning_counts (test_checker.CliTests.test_invalid_and_empty_are_not_warning_counts) ... ok
+test_loop_explanations_and_summary (test_checker.CliTests.test_loop_explanations_and_summary) ... ok
+test_quit_aliases (test_checker.CliTests.test_quit_aliases) ... ok
+test_all_rules_accumulate_in_order (test_checker.RuleBoundaries.test_all_rules_accumulate_in_order) ... ok
+test_at_in_path_still_matches_workbook (test_checker.RuleBoundaries.test_at_in_path_still_matches_workbook) ... ok
+test_case_insensitive_host_and_scheme (test_checker.RuleBoundaries.test_case_insensitive_host_and_scheme) ... ok
+test_empty_input (test_checker.RuleBoundaries.test_empty_input) ... ok
+test_empty_segments_not_counted (test_checker.RuleBoundaries.test_empty_segments_not_counted) ... ok
+test_five_segments (test_checker.RuleBoundaries.test_five_segments) ... ok
+test_four_segments (test_checker.RuleBoundaries.test_four_segments) ... ok
+test_ip_and_http_accumulate (test_checker.RuleBoundaries.test_ip_and_http_accumulate) ... ok
+test_ip_in_path_not_host (test_checker.RuleBoundaries.test_ip_in_path_not_host) ... ok
+test_ipv4_shape_is_not_validation (test_checker.RuleBoundaries.test_ipv4_shape_is_not_validation) ... ok
+test_ipv6_not_part_of_workbook_rule (test_checker.RuleBoundaries.test_ipv6_not_part_of_workbook_rule) ... ok
+test_length_100_is_not_long (test_checker.RuleBoundaries.test_length_100_is_not_long) ... ok
+test_length_101_is_long (test_checker.RuleBoundaries.test_length_101_is_long) ... ok
+test_malformed_brackets (test_checker.RuleBoundaries.test_malformed_brackets) ... ok
+test_missing_hostname (test_checker.RuleBoundaries.test_missing_hostname) ... ok
+test_missing_scheme_assumes_http (test_checker.RuleBoundaries.test_missing_scheme_assumes_http) ... ok
+test_outer_whitespace_not_counted (test_checker.RuleBoundaries.test_outer_whitespace_not_counted) ... ok
+test_punycode_only_in_host (test_checker.RuleBoundaries.test_punycode_only_in_host) ... ok
+test_punycode_substring_matches_workbook (test_checker.RuleBoundaries.test_punycode_substring_matches_workbook) ... ok
+test_unicode_authority_parse_error (test_checker.RuleBoundaries.test_unicode_authority_parse_error) ... ok
+test_five_exact_samples (test_checker.WorkbookSamples.test_five_exact_samples) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.003s
+
+OK

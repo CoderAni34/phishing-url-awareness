@@ -1,0 +1,85 @@
+Command: python -B phishing_checker.py
+Input supplied on stdin: https://www.example.com/login followed by q
+EWB Phishing URL Awareness Checker
+Text checks only - this program does not open URLs.
+Awareness only: these clues do NOT prove a URL safe or malicious.
+
+Enter a sample URL (or type q to quit): 
+Result:
+- No listed warning signs found. This does NOT prove safety.
+Awareness only: these clues do NOT prove a URL safe or malicious.
+Never enter passwords from unexpected links.
+
+Enter a sample URL (or type q to quit): Goodbye! Stay alert online.
+
+
+Command: python -B phishing_checker.py
+Input supplied on stdin: http://192.0.2.10/account followed by q
+EWB Phishing URL Awareness Checker
+Text checks only - this program does not open URLs.
+Awareness only: these clues do NOT prove a URL safe or malicious.
+
+Enter a sample URL (or type q to quit): 
+Result:
+- Uses an IP address instead of a familiar domain.
+- Uses HTTP. HTTPS alone does not prove trust.
+  Why 1: A numeric hostname can obscure identity. Internal tools may use one legitimately. This workbook rule matches IPv4-style text, not validated IP addresses.
+  Why 2: HTTP does not encrypt traffic. HTTPS encryption alone does not establish honesty.
+REVIEW CAREFULLY: 2 warning sign(s) found.
+Awareness only: these clues do NOT prove a URL safe or malicious.
+Never enter passwords from unexpected links.
+
+Enter a sample URL (or type q to quit): Goodbye! Stay alert online.
+
+
+Command: python -B phishing_checker.py
+Input supplied on stdin: http://example.com@sample.invalid/login followed by q
+EWB Phishing URL Awareness Checker
+Text checks only - this program does not open URLs.
+Awareness only: these clues do NOT prove a URL safe or malicious.
+
+Enter a sample URL (or type q to quit): 
+Result:
+- Contains an @ symbol; inspect carefully.
+- Uses HTTP. HTTPS alone does not prove trust.
+  Why 1: In the authority, text before @ is user information, not the destination. This broad rule also flags @ in paths or queries.
+  Why 2: HTTP does not encrypt traffic. HTTPS encryption alone does not establish honesty.
+REVIEW CAREFULLY: 2 warning sign(s) found.
+Awareness only: these clues do NOT prove a URL safe or malicious.
+Never enter passwords from unexpected links.
+
+Enter a sample URL (or type q to quit): Goodbye! Stay alert online.
+
+
+Command: python -B phishing_checker.py
+Input supplied on stdin: https://a.b.c.d.e.example.invalid/path followed by q
+EWB Phishing URL Awareness Checker
+Text checks only - this program does not open URLs.
+Awareness only: these clues do NOT prove a URL safe or malicious.
+
+Enter a sample URL (or type q to quit): 
+Result:
+- Contains many hostname segments/subdomains.
+  Why 1: Five or more nonempty dot-separated parts can make the host confusing. Legitimate services can also have many parts.
+REVIEW CAREFULLY: 1 warning sign(s) found.
+Awareness only: these clues do NOT prove a URL safe or malicious.
+Never enter passwords from unexpected links.
+
+Enter a sample URL (or type q to quit): Goodbye! Stay alert online.
+
+
+Command: python -B phishing_checker.py
+Input supplied on stdin: https://xn--example.invalid/ followed by q
+EWB Phishing URL Awareness Checker
+Text checks only - this program does not open URLs.
+Awareness only: these clues do NOT prove a URL safe or malicious.
+
+Enter a sample URL (or type q to quit): 
+Result:
+- Contains a punycode-style hostname.
+  Why 1: The xn-- marker can represent international names, including look-alike letters. International names are also used legitimately.
+REVIEW CAREFULLY: 1 warning sign(s) found.
+Awareness only: these clues do NOT prove a URL safe or malicious.
+Never enter passwords from unexpected links.
+
+Enter a sample URL (or type q to quit): Goodbye! Stay alert online.
