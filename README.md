@@ -97,7 +97,7 @@ segments, host versus path, case, empty input, malformed parsing and CLI behavio
 
 ## Screenshots
 
-The genuine sample-run screenshot has been added and visually verified:
+Updated genuine sample run showing the command, input, both warnings and explanations:
 
 ![Sample run](screenshots/sample_run.png)
 
