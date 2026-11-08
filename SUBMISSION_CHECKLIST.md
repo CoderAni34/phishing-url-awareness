@@ -2,6 +2,9 @@
 
 ## Completed locally
 
+- [x] Add browser-only web demo and 25 passing rule checks; publish with GitHub Pages (status built).
+- [x] Record live URL: https://coderani34.github.io/phishing-url-awareness/
+
 - [x] Read the supplied workbook and extract exact rules, samples, testing expectations, rubric and checklist.
 - [x] Python 3.10+ standard-library modular implementation with interactive input.
 - [x] All six workbook checks and exact warning messages preserved.
@@ -14,6 +17,8 @@
 - [x] requirements.txt and .gitignore included; no runtime dependencies.
 
 ## Remaining before submission
+
+- [ ] Visually check the live website on desktop and mobile; development browser access was unavailable.
 
 - [x] Add student name (Aniket) and offer-letter-verified programme (AI Powered Cyber Security Internship), role, start date and duration to README. No separate batch identifier is stated in the letter.
 - [ ] Student reviews/adapts the AI-generated work in their own words and checks EWB's AI-assistance policy.

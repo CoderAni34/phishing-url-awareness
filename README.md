@@ -4,6 +4,8 @@ My final mini-project for the EWB AI Powered Cyber Security Internship.
 
 ## Web demo
 
+[Open the live URL checker](https://coderani34.github.io/phishing-url-awareness/)
+
 The browser version lives in [`docs/`](docs/). It checks URL text locally using
 JavaScript; entered URLs are never fetched, uploaded or saved. The Python CLI
 below remains the original internship implementation. The web parser is a small
@@ -11,6 +13,9 @@ adaptation, not a full equivalent of Python's URL parser or a URL validator.
 
 Run the optional browser-rule checks with `node tests/test_web.cjs` (Node.js is
 only needed to run these extra web tests, not to use the website or Python CLI).
+All 25 browser-rule checks pass, including the five exact workbook samples.
+GitHub Pages reports a successful public build. Visual browser QA could not be
+completed in the development session because browser access was unavailable.
 
 Phishing links try to trick people into sharing passwords or other sensitive information. This project is a small Python command-line tool that checks URL text for six warning signs from the EWB workbook. It does not open the link or connect to any website.
 
