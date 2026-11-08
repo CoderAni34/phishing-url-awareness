@@ -23,11 +23,13 @@
 - [x] Add both screenshot image links to README using verified local paths.
 - [ ] Verify both images render on GitHub after publication.
 - [x] Obtain explicit user approval before publishing to GitHub.
-- [ ] Publish as phishing-url-awareness (public unless coordinator says otherwise); include the url_checker package and all required artifacts.
-- [ ] Inspect published files/images, exclude local PDF/extraction and caches/secrets, and confirm repository access in a private window.
-- [ ] Record GitHub username, repository URL and submission date.
+- [x] Publish public repository phishing-url-awareness with the url_checker package and all required artifacts.
+- [x] Verify all 19 published file paths and both image sizes through GitHub; exclude local PDF/extraction and caches.
+- [ ] Confirm repository access and image rendering in a private browser window. Automated web fetch was unavailable.
+- [x] Record GitHub username CoderAni34 and repository URL https://github.com/CoderAni34/phishing-url-awareness (published 2026-11-08).
+- [ ] Record the EWB submission date after submission actually occurs.
 - [ ] Obtain explicit user approval before submitting through the internship team's designated method.
 
-No GitHub repository has been created or published and no EWB submission made.
+The public GitHub repository has been published; no EWB submission has been made.
 The workbook supplies no submission-form URL. Certificate eligibility depends
 on review and verification; no result or grade is guaranteed.

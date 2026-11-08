@@ -205,4 +205,5 @@ Aniket has confirmed reviewing the project. The student should be able to explai
 the work and follow EWB's authorship/AI policy; policy compliance has not been independently verified.
 The workbook asks for the student's own improvements and README wording; this
 AI-generated draft alone does not demonstrate that requirement. The student
-provided both screenshots. Publication and submission remain pending.
+provided both screenshots. The project is published at
+https://github.com/CoderAni34/phishing-url-awareness. Submission to EWB remains pending.
